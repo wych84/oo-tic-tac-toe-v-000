@@ -87,8 +87,8 @@ class TicTacToe
   end
   
   
-  def full?(board = [" ", " ", " ", " ", " ", " ", " ", " ", " "])
-    if board.any? {|z| z == " "}
+  def full?
+    if @board.any? {|z| z == " "}
       false 
     else
       true
